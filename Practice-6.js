@@ -1,18 +1,32 @@
 const prompt = require("prompt-sync")()
-let a = Number.parseInt(prompt("Enter your age"))
-// let c = confirm("Do you want to see the prompt again?")
+let runAgain = true
 
-
-const canDrive = (age) => {
-    if (age>18){
-        return alert("You can drive a car")
+// Answer 1,2 & 3 -->
+while(runAgain == true){
+    let age = Number.parseInt(prompt("Enter your age"))
+    const canDrive = (a) => {
+        if (a>=18){
+            return alert("you can drive")
+        }
+        else if(a<0){
+            return console.error("Age entered is not valid. Please enter correct age.")
+        }
+        else{
+            return alert("you cannot drive")
+        }
     }
-else{
-    return alert("No, you are not eligible to drive a car")
-}
+canDrive(age)
+runAgain = confirm("Do you want to run again?")
 }
 
-// c = confirm("Do you want to see the prompt again?")
-// if (c == true){
-    canDrive(a)
+//  Answer 4 -->
+
+// let a = Number.parseInt(prompt("Enter your age"))
+// if (a>4){
+//     location.href = ("https://google.com");
 // }
+
+//  Answer 5 -->
+
+// let color = prompt("Enter a colour you want to fill background with")
+// document.body.style.backgroundColor = color;
