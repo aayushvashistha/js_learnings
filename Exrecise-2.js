@@ -1,5 +1,5 @@
 // Game of Snake, Water and Gun where Gun kills Snake, Snake drinks water and Water sinks Gun (Just like Rock, paper, scissor)
-
+// Game starts below
 let myArray = ["S", "W", "G"]
 
 let i = 5
